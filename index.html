@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de agendamento</title>
+</head>
+<body>
+    <section>
+        <h2>Agendar</h2>
+        <form action="https://formsubmit.co/krncostasilva@hotmail.com" method="POST">
+            <label>Acessor</label><br>
+            <input type="text" name="Acessor" placeholder="Digite seu nome" required> <br>
+            <label>Nome do cliente</label><br>
+            <input type="text" name="Cliente" placeholder="Digite nome do cliente" required> <br>
+            <label>Demanda</label><br>
+            <input type="text" name="demanda" placeholder="Qual a demanda?" required> <br>
+            <label>Data e Hora</label><br>
+            <input type="text" name="data" placeholder="dd/mm , hh:mn" required> <br>
+            <label>Observação</label><br>
+            <textarea name="obs" cols="30" rows="5" placeholder="Opcional..."></textarea> <BR></BR>
+
+            <button type="submit">Agendar</button>
+        
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agendado.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/agendado.html">
+        </form>
+    </section>
+</body>
+</html>
